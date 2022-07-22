@@ -9,8 +9,9 @@
 </ul><ul>
 <li>React</li>
 </ul><h2>Screenshots</h2>
-<hr><p><img src="https://github.com/hosseinrmt/shopping-cart/raw/master/src/Img/1.png" alt=""></p><h2>Project Status</h2>
-<hr><p>In progress</p><ul>
+<hr><p><img src="https://github.com/hosseinrmt/shopping-cart/raw/master/src/Img/1.png" alt="">
+
+<ul>
 
 # Getting Started with Create React App
 

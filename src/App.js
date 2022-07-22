@@ -18,23 +18,29 @@ class App extends Component {
   };
 
   incrementHandler = (id) => {
+    const index = this.state.products.findIndex((item) => item.id === id);
+    const product = { ...this.state.products[index] };
+    product.quantity++;
     const products = [...this.state.products];
-    const incrementedProduct = products.find((p) => p.id === id);
-    incrementedProduct.quantity++;
+    products[index] = product;
     this.setState({ products });
   };
 
   decrementHandler = (id) => {
+    const index = this.state.products.findIndex((item) => item.id === id);
+    const product = { ...this.state.products[index] };
+    product.quantity--;
     const products = [...this.state.products];
-    const incrementedProduct = products.find((p) => p.id === id);
-    incrementedProduct.quantity--;
+    products[index] = product;
     this.setState({ products });
   };
 
   changeHandler = (event, id) => {
+    const index = this.state.products.findIndex((item) => item.id === id);
+    const product = { ...this.state.products[index] };
+    product.title = event.target.value;
     const products = [...this.state.products];
-    const changeProduct = products.find((p) => p.id === id);
-    changeProduct.title = event.target.value;
+    products[index] = product;
     this.setState({ products });
   };
 

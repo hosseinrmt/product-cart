@@ -1,3 +1,17 @@
+<h1>shopping cart page</h1>
+<hr><p>a webpage used to increase, decrease and delete products, developed by REACT.JS</p><h2>Technologies Used</h2>
+<hr><ul>
+<li>HTML</li>
+</ul><ul>
+<li>CSS</li>
+</ul><ul>
+<li>JavaScript</li>
+</ul><ul>
+<li>React</li>
+</ul><h2>Screenshots</h2>
+<hr><p><img src="https://github.com/hosseinrmt/shopping-cart/raw/master/src/Img/1.png" alt=""></p><h2>Project Status</h2>
+<hr><p>In progress</p><ul>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +82,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<li>This project is based on React course</li>
+</ul><ul>
+<li>many thanks to dear Saheb Mohammadi</li>
+</ul><h2>Contact</h2>
+<hr><p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/hosseinrmt/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width: 10%;"></a><span style="margin-right: 30px;"></span><a href="https://github.com/hosseinrmt"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>

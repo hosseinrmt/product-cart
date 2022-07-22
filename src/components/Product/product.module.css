@@ -5,5 +5,67 @@
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 40rem;
+}
+
+.delete {
+    padding: 7px 22px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 0, 38);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.increment {
+    padding: 7px 22px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.decrement {
+    padding: 7px 22px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity {
+    background-color: #bfdbfe;
+    color: #111;
+    padding: 0.5rem;
+    border-radius: 50rem;
+}
+
+input {
+    outline: none;
+    border: 1px solid #6d28d9;
+    border-radius: 7px;
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
+input:focus {
+    border: 2px solid #6d28d9;
 }

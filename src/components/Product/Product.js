@@ -3,26 +3,34 @@ import { BiTrash } from "react-icons/bi";
 import { BiPlus } from "react-icons/bi";
 import { BiMinus } from "react-icons/bi";
 
-const Product = (props) => {
+const Product = ({
+  onChange,
+  onDecrement,
+  onDelete,
+  onIncrement,
+  title,
+  price,
+  quantity,
+}) => {
   return (
     <div className={styles.product}>
-      <p>{props.title} course</p>
-      <p>{props.price}</p>
-      <input type="text" value={props.title} onChange={props.onChange} />
+      <p>{title} course</p>
+      <p>{price}</p>
+      <input type="text" value={title} onChange={onChange} />
 
-      {props.quantity === 1 ? (
-        <button className={styles.delete} onClick={props.onDelete}>
+      {quantity === 1 ? (
+        <button className={styles.delete} onClick={onDelete}>
           <BiTrash />
         </button>
       ) : (
-        <button className={styles.decrement} onClick={props.onDecrement}>
+        <button className={styles.decrement} onClick={onDecrement}>
           <BiMinus />
         </button>
       )}
 
-      <span className={styles.quantity}>{props.quantity}</span>
+      <span className={styles.quantity}>{quantity}</span>
 
-      <button className={styles.increment} onClick={props.onIncrement}>
+      <button className={styles.increment} onClick={onIncrement}>
         <BiPlus />
       </button>
     </div>

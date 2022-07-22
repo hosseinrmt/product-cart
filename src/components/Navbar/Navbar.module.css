@@ -1,0 +1,21 @@
+.nav {
+    background-color: #e2e8f0;
+    width: 100vw;
+    height: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-right: 1rem;
+}
+
+span {
+    background: #cbd5e1;
+    padding: 0.7rem 1rem;
+    font-size: 17px;
+    color: #111;
+    border-radius: 50%;
+}

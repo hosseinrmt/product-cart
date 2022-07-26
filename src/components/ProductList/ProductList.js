@@ -1,11 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import Product from "../Product/Product";
+import { useProducts, useProductsAction } from "../Providers/ProductsProvider";
 import styles from "./ProductList.module.css";
 
-class ProductList extends Component {
-  renderProduct = () => {
-    const { onChange, onDecrement, onDelete, onIncrement, products } =
-      this.props;
+const ProductList = () => {
+  const products = useProducts();
+  const { deleteHandler, incrementHandler, decrementHandler, changeHandler } =
+    useProductsAction();
+
+  const renderProduct = () => {
     if (products.length === 0) return <div>there is no product in cart</div>;
 
     return (
@@ -16,11 +19,11 @@ class ProductList extends Component {
               key={product.id}
               title={product.title}
               price={product.price}
-              onChange={(e) => onChange(e, product.id)}
-              onIncrement={() => onIncrement(product.id)}
+              onChange={(e) => changeHandler(e, product.id)}
+              onIncrement={() => incrementHandler(product.id)}
               quantity={product.quantity}
-              onDecrement={() => onDecrement(product.id)}
-              onDelete={() => onDelete(product.id)}
+              onDecrement={() => decrementHandler(product.id)}
+              onDelete={() => deleteHandler(product.id)}
             />
           );
         })}
@@ -28,15 +31,12 @@ class ProductList extends Component {
     );
   };
 
-  render() {
-    const { products } = this.props;
-    return (
-      <div>
-        {!products.length && <div>go to shopping!</div>}
-        {this.renderProduct()}
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      {!products.length && <div>go to shopping!</div>}
+      {renderProduct()}
+    </div>
+  );
+};
 
 export default ProductList;

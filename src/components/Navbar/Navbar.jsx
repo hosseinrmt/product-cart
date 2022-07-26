@@ -1,6 +1,9 @@
+import { useProducts } from "../Providers/ProductsProvider";
 import styles from "./Navbar.module.css";
 
-const Navbar = ({ totalItems }) => {
+const Navbar = () => {
+  const products = useProducts();
+  const totalItems = products.length;
   return (
     <nav className={styles.nav}>
       <h1>shopping cart</h1>

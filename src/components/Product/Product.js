@@ -4,7 +4,6 @@ import { BiPlus } from "react-icons/bi";
 import { BiMinus } from "react-icons/bi";
 
 const Product = ({
-  onChange,
   onDecrement,
   onDelete,
   onIncrement,
@@ -14,9 +13,8 @@ const Product = ({
 }) => {
   return (
     <div className={styles.product}>
-      <p>{title} course</p>
+      <p>{title}</p>
       <p>{price}</p>
-      <input type="text" value={title} onChange={onChange} />
 
       {quantity === 1 ? (
         <button className={styles.delete} onClick={onDelete}>

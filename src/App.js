@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import Filter from "./components/Filter/FilterProducts";
 import Wrapper from "./components/hoc/Wrapper";
 import Navbar from "./components/Navbar/Navbar";
 import ProductList from "./components/ProductList/ProductList";
@@ -10,6 +11,7 @@ const App = () => {
     <>
       <ProductsProvider>
         <Navbar />
+        <Filter />
         <ProductList />
       </ProductsProvider>
     </>

@@ -1,13 +1,8 @@
 import React, { useContext, useReducer } from "react";
+import { productsData } from "../../db/products";
 
 const ProductsContext = React.createContext();
 const ProductsContextDispatcher = React.createContext();
-
-const initialState = [
-  { title: "react.js", quantity: 1, price: "59 $", id: 1 },
-  { title: "Vue.js", quantity: 1, price: "89 $", id: 2 },
-  { title: "Node.js", quantity: 1, price: "29 $", id: 3 },
-];
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -34,19 +29,20 @@ const reducer = (state, action) => {
       return filteredProducts;
     }
 
-    case "edit": {
-      const index = state.findIndex((item) => item.id === action.id);
-      const product = { ...state[index] };
-      product.title = action.event.target.value;
-      const updatedProducts = [...state];
-      updatedProducts[index] = product;
-      return updatedProducts;
-    }
+    case "filter":
+      if (action.selectedOption.value === "") {
+        return productsData;
+      } else {
+        const filteredProducts = productsData.filter((p) =>
+          p.availableSizes.includes(action.selectedOption.value)
+        );
+        return filteredProducts;
+      }
   }
 };
 
 const ProductsProvider = ({ children }) => {
-  const [products, dispatch] = useReducer(reducer, initialState);
+  const [products, dispatch] = useReducer(reducer, productsData);
 
   return (
     <ProductsContext.Provider value={products}>

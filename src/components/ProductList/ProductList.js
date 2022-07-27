@@ -26,9 +26,6 @@ const ProductList = () => {
               onDecrement={() =>
                 dispatch({ type: "decrement", id: product.id })
               }
-              onChange={(e) =>
-                dispatch({ type: "edit", id: product.id, event: e })
-              }
             />
           );
         })}

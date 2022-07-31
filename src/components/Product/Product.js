@@ -14,7 +14,7 @@ const Product = ({
   return (
     <div className={styles.product}>
       <p>{title}</p>
-      <p>{price}</p>
+      <p>{price} $</p>
 
       {quantity === 1 ? (
         <button className={styles.delete} onClick={onDelete}>

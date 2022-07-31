@@ -1,7 +1,20 @@
+.filterSearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .filter {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40rem;
+    width: 100%;
     margin: 2rem;
+}
+
+
+.filter>div>* {
+    margin: 1rem;
+    width: 12rem;
 }

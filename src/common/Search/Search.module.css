@@ -1,0 +1,21 @@
+.searchContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+    margin-top: 1rem;
+}
+
+.searchInput {
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20rem;
+    padding: 0.5rem;
+    font-size: 17px;
+    margin-left: 1rem;
+}
+
+.searchInput:focus {
+    border: 2px solid #a7a7a7;
+}

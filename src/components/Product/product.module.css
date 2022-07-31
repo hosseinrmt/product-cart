@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40rem;
+    width: 100%;
 }
 
 .delete {
@@ -55,17 +55,4 @@
     color: #111;
     padding: 0.5rem;
     border-radius: 50rem;
-}
-
-input {
-    outline: none;
-    border: 1px solid #6d28d9;
-    border-radius: 7px;
-    width: 10rem;
-    padding: 0.5rem;
-    font-size: 15px;
-}
-
-input:focus {
-    border: 2px solid #6d28d9;
 }

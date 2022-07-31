@@ -12,7 +12,7 @@ h1 {
     margin-right: 1rem;
 }
 
-span {
+.productsNumber {
     background: #cbd5e1;
     padding: 0.7rem 1rem;
     font-size: 17px;

@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <h1>shopping cart</h1>
-      <span>{totalItems}</span>
+      <span className={styles.productsNumber}>{totalItems}</span>
     </nav>
   );
 };
